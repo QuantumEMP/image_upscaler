@@ -1,7 +1,3 @@
 name = "image-upscaler"
 compatibility_date = "2026-10-01"
-
-# Static site only — no Worker script needed.
-[assets]
-directory = ".output/public"
-not_found_handling = "single-page-application"
+pages_build_output_dir = ".output/public"
