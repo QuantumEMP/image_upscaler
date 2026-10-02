@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "realesr-general-x4v3",
+      "label": "General (fast)",
+      "description": "Compact model for photos. Fast, good default.",
+      "scale": 4,
+      "tile": 256,
+      "bytes": 4866396,
+      "parts": [
+        "realesr-general-x4v3.onnx.part0"
+      ]
+    },
+    {
+      "id": "realesrgan-x4plus",
+      "label": "General (best)",
+      "description": "Full RRDB model. Highest quality for photos, much slower.",
+      "scale": 4,
+      "tile": 128,
+      "bytes": 67051618,
+      "parts": [
+        "realesrgan-x4plus.onnx.part0",
+        "realesrgan-x4plus.onnx.part1",
+        "realesrgan-x4plus.onnx.part2",
+        "realesrgan-x4plus.onnx.part3"
+      ]
+    },
+    {
+      "id": "realesrgan-x4plus-anime",
+      "label": "Anime / illustration",
+      "description": "Optimised for anime art and drawings.",
+      "scale": 4,
+      "tile": 192,
+      "bytes": 17939943,
+      "parts": [
+        "realesrgan-x4plus-anime.onnx.part0"
+      ]
+    },
+    {
+      "id": "realesr-animevideov3",
+      "label": "Anime (fast)",
+      "description": "Tiny, very fast model for anime-style images.",
+      "scale": 4,
+      "tile": 256,
+      "bytes": 2492876,
+      "parts": [
+        "realesr-animevideov3.onnx.part0"
+      ]
+    }
+  ]
+}

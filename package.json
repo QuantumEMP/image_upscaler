@@ -1,0 +1,24 @@
+{
+  "name": "realesrgan-upscaler",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt generate",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "models:export": "python3 scripts/export-onnx.py",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^4.5.2",
+    "onnxruntime-web": "^1.30.0",
+    "pica": "^10.0.3",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "typescript": "~5.9",
+    "vue-tsc": "^3.3.11",
+    "wrangler": "^4.145.0"
+  }
+}
